@@ -1,0 +1,30 @@
+Install Chocolatey
+
+choco install git -y
+
+choco install 
+
+
+
+
+
+git config --global user.name "bullting"
+git config --global user.email jakadui@gmail.com
+
+git clone https://github.com/bullting/my-portfolio.git
+
+atom README.md
+
+git commit -m "First Commit - fix Readme title and Description"
+
+git push
+
+git add Readme.md (after change something in file)
+
+ssh-keygen -C jakadui@gmail.com
+--> open file id_rsa.pub under .ssh folder.
+--> Copy and patse details to Github
+
+ssh-add (In case of error, maybe ok to ignore)
+
+
