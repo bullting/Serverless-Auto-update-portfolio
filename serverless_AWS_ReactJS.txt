@@ -1,9 +1,38 @@
-Install Chocolatey
+*** Install Chocolatey ***
 
-choco install git -y
+- Luanch Windows Powershell as Administrator
 
-choco install 
+@ Run <Get-ExecutionPolicy>
 
+@ Run <iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')
+^This link can be found in Chocolatey website in section of Install with powershell.
+
+After installation finished, run <choco -?> to check, if error display then try reboot windows or powershell.
+
+*** To install git ****
+
+@ Run <choco install git -y>
+
+*** To install open SSH ***
+
+@ Run <choco install openssh -y  -params "/SSHAgentFeature">
+
+*** To install Node.js and NPM ***
+
+@ Run <choco install nodejs npm -y>
+
+Note: If error occurs at the end of message, then look at the message above to see if it say nodejs has installed successfully.
+
+@ Run <npm> to check
+
+@ Run <choco install atom -y>
+
+@ Run <choco install python2>
+
+choco install awscli -y
+choco install unzip Less -y (To view the file in command line)
+
+Last restart windows.
 
 
 
