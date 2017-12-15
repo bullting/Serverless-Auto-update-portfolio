@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Portfolio</title>
+    <style media="screen">
+
+      .MessageBox{
+        border: 1px solid;
+        margin: 1em;
+        padding: 2em;
+      }
+
+      .error{
+        background-color: #eebbbb;
+        border-color: red;
+      }
+      .Success{
+        background-color: #bbeebb;
+        border-color: blue;
+      }
+      .hidden{
+        display: none;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <main id="content"></main>
+
+    <script src="https://unpkg.com/babel-standalone"></script>
+    <script type="text/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+
+    <script type="text/babel" data-presets="react">
+      class NameInput extends React.Component {
+        render() {
+          return (
+            <div>
+                <label>Name: <input type="text" /></label>
+                <button>Click here!</button>
+                <MessageBox />
+                
+            </div>
+          )
+        }
+      }
+
+      class MessageBox extends React.Component {
+        render() {
+          return (
+            <div className="">
+              This is React
+            </div>
+          )
+        }
+      }
+
+        ReactDOM.render(<NameInput />, document.getElementById("content"));
+
+    </script>
+  </body>
+</html>
